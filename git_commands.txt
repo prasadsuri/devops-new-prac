@@ -1,0 +1,53 @@
+ 1) git init
+
+2) git config --global user.name "akshatgupta"   (set my name as akshatgupta as global value) 
+
+3) git config --global user.email "akshu20791@gmail.com"   (set the email as akshu20791@gmail.com as global value) 
+
+git config --list  (to list global setting of git)
+
+4) touch file1 file2 file3 file4    (created the blank files) (linux command)
+
+5) git status                           (to check the status of my files)
+
+6)git rm --cached filel      (to remove a file from staging area)
+
+6) git status   (you will see that file1 is again in working dir)
+
+7) open file2 and modify file2 
+
+8) git status   ( you will see file1 is untracked and file2 is modified)
+
+9) git add file2   (this will add file2 in staging are_
+
+10) git status  (you will see that file1 is untracked and other files are in staging area) 
+
+commit will move all the files from staging area to local repo
+
+11) git add .
+
+12) git commit -m"first commit"   (put the files from your staging area to local repo) 
+
+13) git log  (all the commits (versions) created) 
+
+14) git log --oneline   (show all the commits in a single line) 
+
+15) ############GIT IGNORE###############
+i) create a file user.log ...add some content in that file 
+ii) create .gitignore 
+iii) open .gitignore   and add user.log 
+iv) git add .
+v) git commit -m"create gitignore"
+vi) now go to user.log and add some content
+vii) git status (you will not see any update in user.log ...we have stopped tracking the file) 
+
+
+
+
+
+
+
+
+
+
+
